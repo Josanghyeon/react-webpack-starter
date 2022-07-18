@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "env-cmd webpack serve --mode development --config ./config/webpack.config.js",
-    "build": "env-cmd webpack --mode production --progress --config ./config/webpack.config.js"
+    "build": "env-cmd webpack --mode production --progress --config ./config/webpack.config.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
     "image-webpack-loader": "^8.1.0",
+    "lint-staged": "^13.0.3",
     "mini-css-extract-plugin": "^2.6.0",
     "prettier": "^2.6.2",
     "style-loader": "^3.3.1",
@@ -52,5 +55,11 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

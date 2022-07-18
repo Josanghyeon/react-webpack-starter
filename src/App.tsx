@@ -1,7 +1,7 @@
 import NOCRA from './NOCRA.png';
 
 function App() {
-  var b =  1;
+  const a = 0;
   return (
     <div>
       <strong>

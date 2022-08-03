@@ -2,24 +2,12 @@
   "name": "react-webpack-starter",
   "version": "1.0.0",
   "description": "react webpack setting without CRA",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "env-cmd webpack serve --mode development --config ./config/webpack.config.js",
     "build": "env-cmd webpack --mode production --progress --config ./config/webpack.config.js",
     "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Josanghyeon/react-webpack-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Josanghyeon/react-webpack-starter/issues"
-  },
-  "homepage": "https://github.com/Josanghyeon/react-webpack-starter#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
@@ -36,6 +24,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "env-cmd": "^10.1.0",
     "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
